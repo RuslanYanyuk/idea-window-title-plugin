@@ -1,6 +1,6 @@
 <idea-plugin>
   <id>ry.idea.plugin</id>
-  <name>CUSTOM TITLE</name>
+  <name>CUSTOM WINDOW TITLE</name>
   <version>1.0</version>
   <vendor email="ruslan.yanyuk@gmail.com" url="https://github.com/RuslanYanyuk">Ruslan Yaniuk</vendor>
 
