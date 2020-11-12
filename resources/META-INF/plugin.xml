@@ -1,0 +1,39 @@
+<idea-plugin>
+  <id>ry.idea.plugin</id>
+  <name>CUSTOM TITLE</name>
+  <version>1.0</version>
+  <vendor email="ruslan.yanyuk@gmail.com" url="https://github.com/RuslanYanyuk">Ruslan Yaniuk</vendor>
+
+  <description><![CDATA[
+      Enter short description for your plugin here.<br>
+      <em>most HTML tags may be used</em>
+    ]]></description>
+
+  <change-notes><![CDATA[
+      Add change notes here.<br>
+      <em>most HTML tags may be used</em>
+    ]]>
+  </change-notes>
+
+  <!-- please see https://www.jetbrains.org/intellij/sdk/docs/basics/getting_started/build_number_ranges.html for description -->
+  <idea-version since-build="173.0"/>
+
+  <!-- please see https://www.jetbrains.org/intellij/sdk/docs/basics/getting_started/plugin_compatibility.html
+       on how to target different products -->
+  <depends>com.intellij.modules.platform</depends>
+
+  <extensions defaultExtensionNs="com.intellij">
+    <applicationService serviceInterface="com.intellij.openapi.wm.impl.FrameTitleBuilder"
+                        serviceImplementation="ry.idea.plugin.CustomFrameTitleBuilder"
+                        overrides="true"/>
+
+    <applicationConfigurable parentId="appearance" instance="ry.idea.plugin.settings.TitleSettings"
+                             id="ry.idea.plugin.CustomFrameTitleBuilder"
+                             displayName="Window Title"/>
+  </extensions>
+
+  <actions>
+    <!-- Add your actions here -->
+  </actions>
+
+</idea-plugin>
