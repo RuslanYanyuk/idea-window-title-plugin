@@ -1,4 +1,4 @@
-package ry.idea.plugin;
+package ry.intellij.plugin;
 
 import com.intellij.openapi.components.PersistentStateComponent;
 import com.intellij.openapi.components.ServiceManager;

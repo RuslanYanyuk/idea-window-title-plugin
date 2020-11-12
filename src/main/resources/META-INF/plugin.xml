@@ -5,15 +5,9 @@
   <vendor email="ruslan.yanyuk@gmail.com" url="https://github.com/RuslanYanyuk">Ruslan Yaniuk</vendor>
 
   <description><![CDATA[
-      Enter short description for your plugin here.<br>
-      <em>most HTML tags may be used</em>
+      Plugin for customizing window title in JetBrains IDE
     ]]></description>
 
-  <change-notes><![CDATA[
-      Add change notes here.<br>
-      <em>most HTML tags may be used</em>
-    ]]>
-  </change-notes>
 
   <!-- please see https://www.jetbrains.org/intellij/sdk/docs/basics/getting_started/build_number_ranges.html for description -->
   <idea-version since-build="173.0"/>
@@ -24,11 +18,11 @@
 
   <extensions defaultExtensionNs="com.intellij">
     <applicationService serviceInterface="com.intellij.openapi.wm.impl.FrameTitleBuilder"
-                        serviceImplementation="ry.idea.plugin.CustomFrameTitleBuilder"
+                        serviceImplementation="ry.intellij.plugin.CustomFrameTitleBuilder"
                         overrides="true"/>
 
-    <applicationConfigurable parentId="appearance" instance="ry.idea.plugin.settings.TitleSettings"
-                             id="ry.idea.plugin.CustomFrameTitleBuilder"
+    <applicationConfigurable parentId="appearance" instance="ry.intellij.plugin.settings.TitleSettings"
+                             id="ry.intellij.plugin.CustomFrameTitleBuilder"
                              displayName="Window Title"/>
   </extensions>
 

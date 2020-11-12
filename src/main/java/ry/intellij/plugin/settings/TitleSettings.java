@@ -1,13 +1,12 @@
-package ry.idea.plugin.settings;
+package ry.intellij.plugin.settings;
 
 import com.intellij.openapi.application.ApplicationManager;
 import com.intellij.openapi.options.Configurable;
-import com.intellij.openapi.util.NlsContexts;
 import com.intellij.ui.components.JBLabel;
 import com.intellij.ui.components.JBTextField;
 import com.intellij.util.ui.FormBuilder;
 import org.jetbrains.annotations.Nullable;
-import ry.idea.plugin.CustomFrameTitleBuilder;
+import ry.intellij.plugin.CustomFrameTitleBuilder;
 
 import javax.swing.*;
 
@@ -31,7 +30,7 @@ public class TitleSettings implements Configurable {
     }
 
     @Override
-    public @NlsContexts.ConfigurableName String getDisplayName() {
+    public String getDisplayName() {
         return "Window Title";
     }
 

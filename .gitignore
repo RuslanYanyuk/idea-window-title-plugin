@@ -1,5 +1,7 @@
 .idea
 out
+build
 .directory
 idea-title.iml
 idea-title.jar
+.gradle
